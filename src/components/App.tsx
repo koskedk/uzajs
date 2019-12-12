@@ -1,10 +1,15 @@
-import React from 'react';
+import React, {Component} from 'react';
+import {ToDoAdd} from "./ToDoAdd";
+import {ToDoList} from "./ToDoList";
 
-class App extends React.Component<any,any>{
+class App extends Component<any,any>{
     render() {
         return (
             <div>
-                <h1>Hello World!</h1>
+                <h1>My Tasks</h1>
+                <hr/>
+                <ToDoAdd/>
+                <ToDoList/>
             </div>
         );
     }
